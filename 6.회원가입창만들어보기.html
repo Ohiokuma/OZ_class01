@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+    <h1>회원가입</h1>
+    </header>
+    <hr>
+    <main>
+        <form>
+            <fieldset>
+                <legend>본인인증</legend>
+                <label for="name">이름</label>
+                <input type="text" id="name" placeholder="이름을 입력해주세요.">
+                <br>
+                <label for="phonenumb">전화번호</label>
+                <input type="tel" id="phonenumb" placeholder="전화번호를 입력해주세요.">
+                <input type="submit" value="인증하기">
+                <input type="radio" id="skt" name="center">
+                <label for="skt">skt</label>
+                <input type="radio" id="kt" name="center">
+                <label for="kt">kt</label>
+                <input type="radio" id="lg" name="center">
+                <label for="lg">lg</label>
+                <input type="radio" id="알뜰폰" name="center">
+                <label for="알뜰폰">알뜰폰</label>
+                <br>
+                <label for="sign">인증번호</label>
+                <input type="number" id="sign">
+                <input type="submit" value="확인">
+            </fieldset>
+                <br>
+            <fieldset>
+                <legend>회원정보</legend>
+                <input type="text" id="email" 
+                placeholder="사용하실 이메일을 적으십시오"><br>
+                <input type="password" id="pw" 
+                placeholder="사용하실 비밀번호를 적으십시오"><br>
+                <input type="password" id="pw1" 
+                placeholder="한번 더 입력해 주십시오"><br>
+                <input type="text" id="nickname" 
+                placeholder="사용하실 닉네임을 입력하세요">
+                <input type="submit" value="중복확인">
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>프로필 설정</legend>
+                <h3>1.성별</h3>
+                <label for="man">남성</label>
+                <input type="radio" id="man" name="sexual">
+                <label for="woman">여성</label>
+                <input type="radio" id="woman" name="sexual">
+                <label for="nowant">비공개</label>
+                <input type="radio" id="nowant" name="sexual">
+                <hr>
+                <h3>2.나이</h3>
+                <input type="number" min="0" max="100">
+                &nbsp;&nbsp;<label for="nowant1"><strong>비공개</strong></label>
+                <input type="checkbox" id="nowant1">
+                <hr>
+                <h3>주소지</h3>
+                <textarea rows="3" cols="30"></textarea>
+                &nbsp;&nbsp;<label for="nowant2"><strong>비공개</strong></label>
+                <input type="checkbox" id="nowant2">
+            </fieldset>
+            <fieldset>
+                <legend>개인정보처리의 의한 동의</legend>
+                <p>개인정보처리 및 수집에 동의 하십니까?</p>
+                <label for="ok">예</label>
+                <input type="radio" id="ok" name="lastone">
+                <label for="never">아니오</label>
+                <input type="radio" id="never" name="lastone"> 
+                <hr>
+                <input type="submit" value="완료">
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>

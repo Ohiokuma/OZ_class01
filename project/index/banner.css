@@ -1,0 +1,27 @@
+.banner {
+    background-color: #007aff;
+    color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.banner p {
+    margin: 0;
+}
+
+.banner button {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #007aff;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .banner {
+        flex-direction: column;
+    }
+}
